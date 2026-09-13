@@ -1,60 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel .</title>
-<link rel="stylesheet" href="styles.css">
-<script src="https://kit.fontawesome.com/18c1153536.js" crossorigin="anonymous"></script>
+    <title>Travel . - Explore le monde autrement</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/18c1153536.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <div class="logo-div">
-        <div class="logo">
-            <p>Travel<span class="logo-span">.</span></p>
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <header>
+        <div class="logo-div">
+            <div class="logo">
+                <p>Travel<span class="logo-span">.</span></p>
+            </div>
         </div>
-    </div>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Reviews</a></li>
-    </ul>
-    <div class="btn-header">
-        <button class="btn">
-            <i class="fa-solid fa-phone"></i>
-        <span>Reserver</span>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Tarifs</a></li>
+                <li><a href="#">Avis</a></li>
+            </ul>
+        </nav>
+        <div class="btn-header">
+            <button class="btn btn-primary">
+                <i class="fa-solid fa-phone"></i>
+                <span>Réserver</span>
+            </button>
+        </div>
+        <button class="burger" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
         </button>
-    </div>
-  </header> 
-  
-  
-  <section class="home-section">
-   <div class="left">
-    <img src="image/img.jpg" alt="" class="left-image-1">
-    <img src="image/img2.jpg" alt="" class="left-image-2">
-   </div>
-   <div class="right">
-    <div>
-        <span class="text-right">Planifiez votre Aventure</span>
-        <h1>Votre Voyage Ideal <br>Commence Ici</h1>
-        <p> Decouvrez des voyages sur mesure concus pour vous. Notre equipe d'experts est prete a transformer vos reves d'evasion en realite avec des options personnalisees et un service irreprochable.</p>
-        
-        <div class="buttons">
-            <button class="btn">
-                <span>Book Now</span>
-            </button>
-            <button class="see-video">
-               <div class="video-bg">
-                <div class="play-btn">
-                    <i class="fa-solid fa-play"></i>
+    </header>
+
+    <section class="home-section">
+        <div class="left">
+            <div class="badge-floating">
+                <i class="fa-solid fa-plane-departure"></i>
+                <div>
+                    <span class="badge-title">Vol direct</span>
+                    <span class="badge-sub">Paris → Bali</span>
                 </div>
-               </div> 
-               <span>Watch our Story</span>
-            </button>
+            </div>
+            <img src="image/img.jpg" alt="Destination principale" class="left-image-1">
+            <img src="image/img2.jpg" alt="Destination secondaire" class="left-image-2">
+            <div class="rating-floating">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <span>4.9 · 2 340 avis</span>
+            </div>
         </div>
-    </div>
-   </div>
-  </section>
+
+        <div class="right">
+            <span class="eyebrow">
+                <i class="fa-solid fa-location-dot"></i>
+                Aventures aux 4 coins du monde
+            </span>
+            <h1 class="hero-title">
+                Explore <span class="highlight">le monde</span><br>
+                à ton rythme.
+            </h1>
+            <p class="hero-desc">
+                Découvre des destinations uniques, planifie ton voyage sur mesure et
+                vis des expériences authentiques avec des guides locaux passionnés.
+            </p>
+
+            <div class="cta-group">
+                <button class="btn btn-primary btn-lg">
+                    Découvrir
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-ghost btn-lg">
+                    <i class="fa-solid fa-circle-play"></i>
+                    Voir la vidéo
+                </button>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-num">120+</span>
+                    <span class="stat-label">Destinations</span>
+                </div>
+                <div class="divider"></div>
+                <div class="stat">
+                    <span class="stat-num">15k</span>
+                    <span class="stat-label">Voyageurs</span>
+                </div>
+                <div class="divider"></div>
+                <div class="stat">
+                    <span class="stat-num">98%</span>
+                    <span class="stat-label">Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
