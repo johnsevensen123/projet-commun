@@ -1,33 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body{
+    background-color:#fff;
 }
 
-ul{
-    display: flex;
+header{
+    padding:20px 8%;
+     display:flex;
     justify-content: space-between;
     align-items: center;
-    
+    width: 100%;
 }
-li {
+
+section{
+    padding:20px 8%;
+   
+}
+.logo{
+    font-weight:bold;
+    font-size: 24px;
+}
+.logo-div{
+    width:30%;
+}
+
+.logo span{
+    color:#F6D238;
+}
+
+ul {
+    display:flex;
+    justify-content:center;
+    width:40%;
     list-style: none;
-    margin: 0 1rem;
+}
+
+ul li{
+    padding:10px 25px;
+}
+
+ul li a{
+    text-decoration:none;
+    color:#999;
+    transition:0.5s;
+    font-size:14px;
+}
+
+ul li a:hover{
+  background-color:#F6D238;
+  padding:15px;
+  color:#000;
+  font-weight:bold;
+  border-radius:20px;
+}
+.btn-header{
+ width:30%;
+ display:flex;
+ justify-content:flex-end;  
+}
+
+.btn {
+ color:#000;
+ background-color:#F6D238;
+ padding:10px 30px;
+ border-radius:20px;
+ font-weight:bold;
+ cursor:pointer;
+ box-shadow:5px 5px 30px rgba(0,0,0,0.1);  
+ transition:0.5s; 
+}
+
+.btn:hover{
+    background-color:#f1f1f1;
+    transform:rotate(5deg);
     
 }
-a{
-text-decoration: none;
+
+.btn i{
+  margin-right:10px;
+}
+
+.home-section{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.home-section .left{
+    position:relative;
+    width:500px;
+    height:600px;
+    transition:0.5s;
+}
+
+.home-section .left img{
+    position:absolute;
+    object-fit:cover;
+    box-shadow:5px 5px 30px rgba(0,0,0,0.1);
+    border-radius:2rem;
+    border:8px solid #fff;
+}
+.home-section .left-image-1{
+  width:450px;
+  height:500px;
+  transition:0.5s;  
+}
+
+.home-section .left-image-2{
+  width:350px;
+  height:350px;
+  transition:0.5s; 
+  top:150px;
+  left:250px; 
+}
+.home-section .left-image-1:hover{
+    transform: scale(1.1) rotate(10deg);
+}
+
+.home-section .left-image-2:hover{
+    transform: scale(1.1) rotate(-10deg);
 }
 
